@@ -1,0 +1,17 @@
+server:
+  port: 8099
+spring:
+  application:
+    name: apollo_demo
+
+app:
+  id: springboot-apollo-demo   # apollo 配置应用的 appid
+
+#启用apollo配置开关
+apollo:
+  meta: http://localhost:8080  # apollo meta-server地址，一般同config-server地址
+  bootstrap:
+    enabled: true
+    eagerLoad:
+      enabled: true
+    namespaces: application
